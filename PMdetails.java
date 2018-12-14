@@ -26,7 +26,6 @@ import jade.wrapper.StaleProxyException;
 public class PMdetails extends JFrame {
 
     private JPanel contentPane;
-
 	/**
 	 * Launch the application.
 	 */
@@ -39,13 +38,12 @@ public class PMdetails extends JFrame {
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
-			}
+		       }
 		});
 	}
 
 	Connection connection = null;
 	private JTable table;
- 
 	
 	public PMdetails() {
 	
@@ -57,18 +55,11 @@ public class PMdetails extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		
 		JButton btnListOfDevelopers = new JButton("List of Developers");
 		btnListOfDevelopers.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-			
-				 
-				 
-				 
+			public void actionPerformed(ActionEvent e) 	 	 
 			}
 		});
-			
-	
 		btnListOfDevelopers.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		btnListOfDevelopers.setBounds(58, 42, 176, 47);
 		contentPane.add(btnListOfDevelopers);
@@ -76,17 +67,9 @@ public class PMdetails extends JFrame {
 		JButton btnStartADiscussion = new JButton("Start a Discussion Thread");
 		btnStartADiscussion.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				
-		
-				 
 				setVisible(false);
-				dispose();
-				
-			}
-
-			 
-
-			 
+				dispose();	
+			} 
 		});
 		btnStartADiscussion.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		btnStartADiscussion.setBounds(44, 244, 227, 47);
@@ -102,8 +85,7 @@ public class PMdetails extends JFrame {
 				    table.setModel(DbUtils.resultSetToTableModel(rs));
 					
 				}catch(Exception e1) {
-
-				 
+ 
 				}	
 			}
 		});
@@ -138,7 +120,6 @@ public class PMdetails extends JFrame {
 				setVisible(false);
 				dispose();
 				
-		
 				}
 			});
 	
